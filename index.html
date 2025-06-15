@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Lex&Struct – Solidité des structures, force du droit</title>
+  <meta name="description" content="Formations en droit et génie civil. Cours PDF, e-books et ressources professionnelles.">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+    .hover-scale:hover {
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+  <!-- Header avec menu mobile -->
+  <header class="flex flex-wrap justify-between items-center p-6 bg-gray-800">
+    <h1 class="text-2xl font-bold">Lex&Struct</h1>
+    <button id="menu-toggle" class="md:hidden p-2 focus:outline-none">☰</button>
+    <nav id="menu" class="hidden md:flex space-y-2 md:space-y-0 md:space-x-4 w-full md:w-auto mt-4 md:mt-0">
+      <a href="#formations" class="block hover:underline">Formations</a>
+      <a href="#ebooks" class="block hover:underline">E-books</a>
+      <a href="#blog" class="block hover:underline">Blog</a>
+      <a href="#contact" class="block hover:underline">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 px-4 bg-gray-800">
+    <h2 class="text-4xl font-extrabold mb-4">Solidité des structures, force du droit</h2>
+    <p class="mb-6 text-gray-300">Formez-vous en droit et en génie civil avec des ressources claires et accessibles.</p>
+    <a href="#formations" class="bg-blue-600 px-6 py-3 rounded-full text-white font-semibold hover:bg-blue-500">Voir les cours</a>
+  </section>
+
+  <!-- Formations Section -->
+  <section id="formations" class="py-16 px-8">
+    <h3 class="text-3xl font-bold mb-6">Formations disponibles</h3>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-gray-800 p-4 rounded shadow hover-scale">
+        <h4 class="text-xl font-semibold mb-2">Introduction au droit civil</h4>
+        <p class="text-gray-400">Cours PDF & vidéo. Téléchargement inclus.</p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded shadow hover-scale">
+        <h4 class="text-xl font-semibold mb-2">Bases du béton armé</h4>
+        <p class="text-gray-400">Explication pas à pas, support illustré.</p>
+      </div>
+      <!-- Ajoutez d'autres cours ici -->
+    </div>
+  </section>
+
+  <!-- E-books Section avec PayPal -->
+  <section id="ebooks" class="py-16 px-8 bg-gray-800">
+    <h3 class="text-3xl font-bold mb-6">E-books à la vente</h3>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-gray-900 p-4 rounded shadow hover-scale">
+        <h4 class="text-xl font-semibold mb-2">Comprendre le droit civil en 7 jours</h4>
+        <p class="text-gray-400">PDF interactif – 5 000 FCFA</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="mt-3">
+          <input type="hidden" name="cmd" value="_xclick">
+          <input type="hidden" name="business" value="votre-email@paypal.com">
+          <input type="hidden" name="item_name" value="E-book Droit Civil">
+          <input type="hidden" name="amount" value="8.50">
+          <input type="submit" value="Acheter" class="bg-blue-600 px-4 py-2 rounded hover:bg-blue-500 cursor-pointer w-full">
+        </form>
+      </div>
+      <!-- Ajoutez d'autres e-books ici -->
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="py-16 px-8">
+    <h3 class="text-3xl font-bold mb-6">Derniers articles</h3>
+    <div class="space-y-6">
+      <article class="bg-gray-800 p-4 rounded shadow hover-scale">
+        <h4 class="text-xl font-semibold mb-2">L'évolution constitutionnelle du Sénégal</h4>
+        <p class="text-gray-400">Un résumé complet de l'histoire politique sénégalaise.</p>
+      </article>
+      <!-- Ajoutez d'autres articles ici -->
+    </div>
+  </section>
+
+  <!-- À propos Section -->
+  <section id="about" class="py-16 px-8 bg-gray-800">
+    <h3 class="text-3xl font-bold mb-6">À propos</h3>
+    <p class="text-gray-400 max-w-3xl">Lex&Struct est un projet porté par un passionné de droit et de génie civil. L’objectif est de rendre ces deux domaines accessibles à tous, à travers une plateforme claire, structurée et moderne.</p>
+  </section>
+
+  <!-- Contact Section avec FormSubmit -->
+  <section id="contact" class="py-16 px-8">
+    <h3 class="text-3xl font-bold mb-6">Contact</h3>
+    <form action="https://formsubmit.co/votre-email@exemple.com" method="POST" class="space-y-4 max-w-xl">
+      <input type="hidden" name="_subject" value="Nouveau message depuis Lex&Struct">
+      <input type="text" name="name" placeholder="Votre nom" required class="w-full p-2 rounded bg-gray-800 border border-gray-600 text-white">
+      <input type="email" name="email" placeholder="Votre email" required class="w-full p-2 rounded bg-gray-800 border border-gray-600 text-white">
+      <textarea name="message" placeholder="Votre message" required class="w-full p-2 rounded bg-gray-800 border border-gray-600 text-white"></textarea>
+      <button type="submit" class="bg-blue-600 px-4 py-2 rounded hover:bg-blue-500">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 p-6 text-center text-gray-500">
+    &copy; 2025 Lex&Struct. Tous droits réservés.
+  </footer>
+
+  <!-- Script pour le menu mobile -->
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
